@@ -1,5 +1,6 @@
 package com.example.tema2android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -46,8 +47,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Ejemplo", "Estoy en on Stop");
     };
 
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
-        Log.i("Ejemplo", "Estoy en on Destroy");
-    };
+        Log.i("Ejemplo", "Estoy en onDestroy");
+        Intent ejemplo = new Intent(this, MainActivity2.class);
+        startActivity(ejemplo);
+    }
 }
