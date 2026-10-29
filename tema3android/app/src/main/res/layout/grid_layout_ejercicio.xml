@@ -1,131 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:columnCount="4"
-    android:orientation="horizontal"
-    android:rowCount="4"
+    android:rowCount="6"
+    android:padding="8dp"
+    android:background="#FFFFFF"
     android:useDefaultMargins="true">
+
+    <!-- Fila 0: Pantalla -->
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_columnSpan="4"
-    android:layout_gravity="fill"
-    android:gravity="right"
-    android:text="0"
-    android:textSize="20sp" />
+        android:id="@+id/pantalla"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_columnSpan="4"
+        android:gravity="end|center_vertical"
+        android:padding="12dp"
+        android:background="#EEEEEE"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <!-- Fila 1: Botones de Limpieza -->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
-        android:text="1"
-        tools:ignore="HardcodedText" />
+        android:id="@+id/miBotonac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="2"
+        android:backgroundTint="#B0BEC5"
+        android:textColor="#000000"
+        android:text="AC" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
-        android:layout_rowSpan="1"
-        android:layout_gravity="fill"
-        android:text="2" />
+        android:id="@+id/miBotonc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="2"
+        android:backgroundTint="#B0BEC5"
+        android:textColor="#000000"
+        android:text="C" />
+
+    <!-- Fila 2: 7, 8, 9, / -->
+    <Button
+        android:id="@+id/miBoton7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
+        android:text="7" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
-        android:text="3" />
+        android:id="@+id/miBoton8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
+        android:text="8" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
+        android:id="@+id/miBoton9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/miBotondiv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="/" />
 
+    <!-- Fila 3: 4, 5, 6, * -->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
+        android:id="@+id/miBoton4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="4" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBoton5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="5" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBoton6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="6" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBotonmult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="*" />
+
+    <!-- Fila 4: 1, 2, 3, - -->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
-        android:text="7" />
+        android:id="@+id/miBoton1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
+        android:text="1" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
-        android:text="8" />
+        android:id="@+id/miBoton2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
+        android:text="2" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
-        android:text="9" />
+        android:id="@+id/miBoton3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
+        android:text="3" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBotonresta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="-" />
+
+    <!-- Fila 5: 0, ., =, + -->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBoton0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="0" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBotonpunto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="." />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBotonigual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="=" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        android:background="#CDDC39"
+        android:id="@+id/miBotonsuma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#000000"
         android:text="+" />
 
-
 </GridLayout>
+
